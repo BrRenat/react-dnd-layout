@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { createStructuredSelector } from 'reselect'
@@ -6,7 +6,9 @@ import { createStructuredSelector } from 'reselect'
 import { testAction } from 'redux/test/actions'
 import { testActionResultSelector } from 'redux/test/selectors'
 
-import { MainContainer, Image } from './styles'
+import Layout from 'components/Layout'
+
+import { MainContainer } from './styles'
 
 const mapDispatchToProps = {
   testAction,
@@ -21,16 +23,12 @@ class MainScreen extends Component {
   render () {
     return (
       <MainContainer>
-        Main page
-        <Image src="http://www.menucool.com/slider/ninja-slider/img/abc.jpg"/>
+        <div style={{ width: '100%', height: '500px' }}>
+          <Layout />
+        </div>
       </MainContainer>
     )
   }
-}
-
-MainScreen.propTypes = {
-  testAction: PropTypes.func,
-  testActionResult: PropTypes.any,
 }
 
 export default compose(

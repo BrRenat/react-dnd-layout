@@ -6,6 +6,6 @@
         "flow"
     ],
     "plugins": [
-      
+      "babel-plugin-transform-decorators-legacy"
     ]
 }

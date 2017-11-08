@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { Provider } from 'react-redux'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 
@@ -24,9 +24,5 @@ const App = ({ store }) => (
     </HashRouter>
   </Provider>
 )
-
-App.propTypes = {
-  store: PropTypes.object,
-}
 
 export default App
