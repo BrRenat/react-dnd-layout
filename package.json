@@ -47,7 +47,7 @@
     "eslint-plugin-react": "^6.9.0",
     "eventsource-polyfill": "^0.9.6",
     "exports-loader": "0.6.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "flow-bin": "^0.47.0",
